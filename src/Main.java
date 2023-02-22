@@ -10,7 +10,7 @@ public class Main {
             personPool.quantityTickets = personPool.quantityTickets - 1;
             System.out.printf("%s %s прокатился на атракционе(осталось %d билета(ов))\n", personPool.name, personPool.sureName, personPool.quantityTickets);
             if (personPool.quantityTickets > 0) {
-                queue.add(personPool);
+                queue.offer(personPool);
             }
         }
     }
